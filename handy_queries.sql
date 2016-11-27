@@ -14,5 +14,5 @@ WHERE
     SELECT * FROM v$result_cache_objects;
 	
 --  to delete cache 
-
+exec dbms_result_cache.flush;
 alter system flush buffer_cache;	
